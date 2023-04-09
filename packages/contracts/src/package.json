@@ -1,5 +1,5 @@
 {
-  "name": "@aragon/osx",
+  "name": "@bosagora/osx",
   "version": "1.2.0",
   "description": "The Aragon OSx Solidity contracts",
   "publishConfig": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aragon/osx.git"
+    "url": "git+https://github.com/bosagora/dao-osx.git"
   },
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/aragon/osx/issues"
+    "url": "https://github.com/bosagora/dao-osx/issues"
   },
-  "homepage": "https://github.com/aragon/osx#readme",
+  "homepage": "https://github.com/bosagora/dao-osx#readme",
   "dependencies": {
     "@ensdomains/ens-contracts": "0.0.11",
     "@openzeppelin/contracts": "4.8.1",

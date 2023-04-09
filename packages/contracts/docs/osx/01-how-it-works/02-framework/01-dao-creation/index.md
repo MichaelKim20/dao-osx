@@ -38,7 +38,7 @@ For more details visit the [`DAOFactory` reference guide entry](../../../03-refe
 
 The `DAORegistry` is used by the `DAOFactory` and contains the `register` function
 
-```solidity title="@aragon/framework/dao/DAORegistry.sol"
+```solidity title="@bosagora/framework/dao/DAORegistry.sol"
 function register(
   IDAO dao,
   address creator,

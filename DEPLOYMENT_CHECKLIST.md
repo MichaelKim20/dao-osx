@@ -73,9 +73,9 @@ To deploy run `yarn deploy --network NETWORK` in `packages/contracts` and replac
 
 ### Packages
 
-- [ ] Publish a new version of `@aragon/osx-artifacts` (`./packages/contracts`) to NPM
-- [ ] Publish a new version of `@aragon/osx` (`./packages/contracts/src`) to NPM
-- [ ] Publish a new version of `@aragon/osx-ethers` (`./packages/contracts-ethers`) to NPM
+- [ ] Publish a new version of `@bosagora/osx-artifacts` (`./packages/contracts`) to NPM
+- [ ] Publish a new version of `@bosagora/osx` (`./packages/contracts/src`) to NPM
+- [ ] Publish a new version of `@bosagora/osx-ethers` (`./packages/contracts-ethers`) to NPM
 - [ ] Update the changelog with the new version
 
 ### Subgraph

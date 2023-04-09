@@ -6,10 +6,10 @@ Install the NPM package to import the solidity source files or the contract arti
 
 ```sh
 # solidity source files
-yarn add @aragon/osx
+yarn add @bosagora/osx
 
 # JSON ABI and bytecode
-yarn add @aragon/osx-artifacts
+yarn add @bosagora/osx-artifacts
 ```
 
 ## Get Started

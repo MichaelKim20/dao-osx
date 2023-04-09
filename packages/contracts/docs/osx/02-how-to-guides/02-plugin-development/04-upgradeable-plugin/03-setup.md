@@ -15,7 +15,7 @@ Now, we show the setup contracts associated with the 3 builds we have implemente
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.8.17;
 
-import {IDAO, PluginUUPSUpgradeable} from '@aragon/osx/core/plugin/PluginUUPSUpgradeable.sol';
+import {IDAO, PluginUUPSUpgradeable} from '@bosagora/osx/core/plugin/PluginUUPSUpgradeable.sol';
 
 /// @title SimpleStorage build 1
 contract SimpleStorageBuild1 is PluginUUPSUpgradeable {
@@ -47,8 +47,8 @@ For the first build, the setup is very similar to the [setup example for the non
 
 pragma solidity 0.8.17;
 
-import {PermissionLib} from '@aragon/osx/core/permission/PermissionLib.sol';
-import {PluginSetup, IPluginSetup} from '@aragon/osx/framework/plugin/setup/PluginSetup.sol';
+import {PermissionLib} from '@bosagora/osx/core/permission/PermissionLib.sol';
+import {PluginSetup, IPluginSetup} from '@bosagora/osx/framework/plugin/setup/PluginSetup.sol';
 import {SimpleStorageBuild1} from './SimpleStorageBuild1.sol';
 
 /// @title SimpleStorageSetup build 1
@@ -119,7 +119,7 @@ contract SimpleStorageBuild1Setup is PluginSetup {
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.8.17;
 
-import {IDAO, PluginUUPSUpgradeable} from '@aragon/osx/core/plugin/PluginUUPSUpgradeable.sol';
+import {IDAO, PluginUUPSUpgradeable} from '@bosagora/osx/core/plugin/PluginUUPSUpgradeable.sol';
 
 /// @title SimpleStorage build 2
 contract SimpleStorageBuild2 is PluginUUPSUpgradeable {
@@ -169,8 +169,8 @@ Additionally, since we want to support updates from build 1 to build 2, we must 
 
 pragma solidity 0.8.17;
 
-import {PermissionLib} from '@aragon/osx/core/permission/PermissionLib.sol';
-import {PluginSetup, IPluginSetup} from '@aragon/osx/framework/plugin/setup/PluginSetup.sol';
+import {PermissionLib} from '@bosagora/osx/core/permission/PermissionLib.sol';
+import {PluginSetup, IPluginSetup} from '@bosagora/osx/framework/plugin/setup/PluginSetup.sol';
 import {SimpleStorageBuild2} from './SimpleStorageBuild2.sol';
 
 /// @title SimpleStorageSetup build 2
@@ -265,7 +265,7 @@ Let's have a close look at the implemented `prepareUpdate` function. The functio
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.8.17;
 
-import {IDAO, PluginUUPSUpgradeable} from '@aragon/osx/core/plugin/PluginUUPSUpgradeable.sol';
+import {IDAO, PluginUUPSUpgradeable} from '@bosagora/osx/core/plugin/PluginUUPSUpgradeable.sol';
 
 /// @title SimpleStorage build 3
 contract SimpleStorageBuild3 is PluginUUPSUpgradeable {
@@ -338,8 +338,8 @@ contract SimpleStorageBuild3 is PluginUUPSUpgradeable {
 
 pragma solidity 0.8.17;
 
-import {PermissionLib} from '@aragon/osx/core/permission/PermissionLib.sol';
-import {PluginSetup, IPluginSetup} from '@aragon/osx/framework/plugin/setup/PluginSetup.sol';
+import {PermissionLib} from '@bosagora/osx/core/permission/PermissionLib.sol';
+import {PluginSetup, IPluginSetup} from '@bosagora/osx/framework/plugin/setup/PluginSetup.sol';
 import {SimpleStorageBuild2} from '../build2/SimpleStorageBuild2.sol';
 import {SimpleStorageBuild3} from './SimpleStorageBuild3.sol';
 

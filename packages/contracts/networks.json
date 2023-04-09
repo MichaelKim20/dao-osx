@@ -38,13 +38,13 @@
   },
   "athens": {
     "url": "https://testnet.bosagora.org",
-    "isTestnet": true,
+    "isTestnet": false,
     "chainId": 2019,
     "deploy": ["./deploy/new", "./deploy/verification"]
   },
   "localhost": {
     "url": "http://localhost:8545",
-    "isTestnet": true,
+    "isTestnet": false,
     "chainId": 1337,
     "deploy": ["./deploy/new", "./deploy/verification"]
   }

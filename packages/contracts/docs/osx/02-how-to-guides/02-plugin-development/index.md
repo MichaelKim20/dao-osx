@@ -8,7 +8,7 @@ Aragon OSx makes it easy for you to write, maintain, and distribute your own plu
 
 ### Hello, World!
 
-To use the Aragon OSx contracts inside your project, import them with `yarn add @aragon/osx` and start developing your own plugin implementation:
+To use the Aragon OSx contracts inside your project, import them with `yarn add @bosagora/osx` and start developing your own plugin implementation:
 
 <details>
 <summary><code>GreeterPlugin</code></summary>
@@ -17,7 +17,7 @@ To use the Aragon OSx contracts inside your project, import them with `yarn add 
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.8.17;
 
-import {Plugin, IDAO} from '@aragon/osx/core/plugin/Plugin.sol';
+import {Plugin, IDAO} from '@bosagora/osx/core/plugin/Plugin.sol';
 
 contract GreeterPlugin is Plugin {
   constructor(IDAO _dao) Plugin(_dao) {}
@@ -39,8 +39,8 @@ Next, you write a plugin setup contract:
 // SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.8.17;
 
-import {PermissionLib} from '@aragon/osx/core/permission/PermissionLib.sol';
-import {PluginSetup} from '@aragon/osx/framework/plugin/setup/PluginSetup.sol';
+import {PermissionLib} from '@bosagora/osx/core/permission/PermissionLib.sol';
+import {PluginSetup} from '@bosagora/osx/framework/plugin/setup/PluginSetup.sol';
 import './MyPlugin.sol';
 
 contract GreeterSetup is PluginSetup {

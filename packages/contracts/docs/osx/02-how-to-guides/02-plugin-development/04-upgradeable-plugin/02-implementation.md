@@ -14,7 +14,7 @@ In build 1, we want to add an authorized `storeNumber` function to the contract 
 <summary><code>SimpleStorageBuild1</code></summary>
 
 ```solidity
-import {PluginUUPSUpgradeable, IDAO} '@aragon/osx/core/plugin/PluginUUPSUpgradeable.sol';
+import {PluginUUPSUpgradeable, IDAO} '@bosagora/osx/core/plugin/PluginUUPSUpgradeable.sol';
 
 /// @title SimpleStorage build 1
 contract SimpleStorageBuild1 is PluginUUPSUpgradeable {
@@ -46,7 +46,7 @@ In build 2, we added a second storage variable `address public account;`. Additi
 <summary><code>SimpleStorageBuild2</code></summary>
 
 ```solidity
-import {PluginUUPSUpgradeable, IDAO} '@aragon/osx/core/plugin/PluginUUPSUpgradeable.sol';
+import {PluginUUPSUpgradeable, IDAO} '@bosagora/osx/core/plugin/PluginUUPSUpgradeable.sol';
 
 /// @title SimpleStorage build 2
 contract SimpleStorageBuild2 is PluginUUPSUpgradeable {
@@ -102,7 +102,7 @@ For build 3, we decided to introduce two separate permissions for the `storeNumb
 <summary><code>SimpleStorageBuild3</code></summary>
 
 ```solidity
-import {PluginUUPSUpgradeable, IDAO} '@aragon/osx/core/plugin/PluginUUPSUpgradeable.sol';
+import {PluginUUPSUpgradeable, IDAO} '@bosagora/osx/core/plugin/PluginUUPSUpgradeable.sol';
 
 /// @title SimpleStorage build 3
 contract SimpleStorageBuild3 is PluginUUPSUpgradeable {
