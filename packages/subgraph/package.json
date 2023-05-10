@@ -1,8 +1,8 @@
 {
-  "name": "@aragon/osx-subgraph",
-  "version": "1.0.1",
+  "name": "@bosagora/osx-subgraph",
+  "version": "1.0.2",
   "description": "The Aragon OSx Subgraph",
-  "homepage": "https://github.com/aragon/osx",
+  "homepage": "https://github.com/bosagora/dao-osx",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "lint": "eslint . --ext .ts",

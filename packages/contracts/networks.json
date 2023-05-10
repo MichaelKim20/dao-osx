@@ -29,5 +29,23 @@
     "chainId": 80001,
     "feesUrl": "https://gasstation-mumbai.matic.today/v2",
     "deploy": ["./deploy/update/to_v1.2.0", "./deploy/verification"]
+  },
+  "bosagora": {
+    "url": "https://mainnet.bosagora.org",
+    "isTestnet": false,
+    "chainId": 2151,
+    "deploy": ["./deploy/new", "./deploy/verification"]
+  },
+  "athens": {
+    "url": "https://testnet.bosagora.org",
+    "isTestnet": false,
+    "chainId": 2019,
+    "deploy": ["./deploy/new", "./deploy/verification"]
+  },
+  "localhost": {
+    "url": "http://localhost:8545",
+    "isTestnet": false,
+    "chainId": 1337,
+    "deploy": ["./deploy/new", "./deploy/verification"]
   }
 }

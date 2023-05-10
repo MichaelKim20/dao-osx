@@ -1,0 +1,23 @@
+{
+  "info": "# Do not edit subgraph.yaml,this is a generated file. \n# Instead, edit subgraph.placeholder.yaml and run: yarn manifest",
+  "network": "athens",
+  "dataSources": {
+    "DAORegistry": {
+      "name": "DAORegistry",
+      "address": "0x3c85892eA22D67399e6a82c3766848Da4817ADFa",
+      "startBlock": 1380000
+    },
+    "PluginRepoRegistry": {
+      "name": "PluginRepoRegistry",
+      "address": "0x2307cEd5f8C752890bE689075D0737af524c4564",
+      "startBlock": 1380000
+    },
+    "PluginSetupProcessors": [
+      {
+        "name": "PluginSetupProcessor",
+        "address": "0x87c7FdC3Bb24ec382b8a793A7164da8257FaF0dF",
+        "startBlock": 1380000
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "name": "@aragon/osx",
+  "name": "@bosagora/osx",
   "version": "0.1.0",
   "description": "Aragon DAO Framework",
-  "repository": "https://github.com/aragon/osx",
+  "repository": "https://github.com/bosagora/dao-osx",
   "author": "Aragon Association",
   "license": "AGPL-3.0-or-later",
   "private": true,

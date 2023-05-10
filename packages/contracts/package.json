@@ -1,6 +1,6 @@
 {
-  "name": "@aragon/osx-artifacts",
-  "version": "1.2.1",
+  "name": "@bosagora/osx-artifacts",
+  "version": "1.2.2",
   "description": "The Aragon OSx Solidity contracts",
   "main": "dist/bundle-cjs.js",
   "module": "dist/bundle-esm.js",
@@ -18,7 +18,7 @@
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js",
     "flatten": "hardhat flatten",
     "analyze": "mythx analyze",
-    "deploy": "hardhat deploy",
+    "deploy": "hardhat deploy --network localhost",
     "prepublishOnly": "yarn build && yarn build:npm",
     "docgen": "hardhat docgen",
     "formatting:check": "prettier '**/*.{json,sol,ts,js,md}' -c",
@@ -31,9 +31,9 @@
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/aragon/osx/issues"
+    "url": "https://github.com/bosagora/dao-osx/issues"
   },
-  "homepage": "https://github.com/aragon/osx#readme",
+  "homepage": "https://github.com/bosagora/dao-osx#readme",
   "devDependencies": {
     "@defi-wonderland/smock": "^2.3.4",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.5",
@@ -58,7 +58,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-promise": "^5.1.1",
     "ethereumjs-util": "^7.1.4",
-    "ethers": "^5.5.1",
+    "ethers": "npm:bosagora-ethers@^5.7.0",
     "hardhat": "^2.12.7",
     "hardhat-deploy": "^0.9.26",
     "hardhat-gas-reporter": "^1.0.4",

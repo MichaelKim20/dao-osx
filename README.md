@@ -10,9 +10,9 @@ Within this monorepo, you will be able to find 3 individual packages:
 - [Contract-ethers](https://github.com/aragon/osx/tree/develop/packages/contracts-ethers): contains the connection between the ethers package and our contracts.
 
 The contents of this repository are distributed via 3 different NPM packages:
-- `@aragon/osx`: The source files, including the protocol contracts and interfaces
-- `@aragon/osx-artifacts`: The contracts bytecode and ABI to use the protocol or deploy it
-- `@aragon/osx-ethers`: The TypeScript wrappers to use the protocol or deploy it using ethers.js
+- `@bosagora/osx`: The source files, including the protocol contracts and interfaces
+- `@bosagora/osx-artifacts`: The contracts bytecode and ABI to use the protocol or deploy it
+- `@bosagora/osx-ethers`: The TypeScript wrappers to use the protocol or deploy it using ethers.js
 
 For more information on the individual packages, please read the respective `README.md`.
 
@@ -158,9 +158,9 @@ The labels also indicate how the npm packages will be bumped to the next version
 
 | Label         | Version bump                                          |
 | ------------- | ----------------------------------------------------- |
-| release:patch | patch bump for `@aragon/osx` and `@aragon/osx-ethers` |
-| release:minor | minor bump for `@aragon/osx` and `@aragon/osx-ethers` |
-| release:major | major bump for `@aragon/osx` and `@aragon/osx-ethers` |
+| release:patch | patch bump for `@bosagora/osx` and `@bosagora/osx-ethers` |
+| release:minor | minor bump for `@bosagora/osx` and `@bosagora/osx-ethers` |
+| release:major | major bump for `@bosagora/osx` and `@bosagora/osx-ethers` |
 
 ## Pull request commands
 

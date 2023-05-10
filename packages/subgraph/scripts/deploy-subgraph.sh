@@ -24,16 +24,12 @@ echo ''
 echo '> Generating types'
 graph codegen
 
-if [ "$NETWORK_NAME" == 'localhost' ]
-then
-  NETWORK_NAME='goerli'
-fi
-
 # Prepare subgraph name
 FULLNAME=$SUBGRAPH_NAME-$NETWORK_NAME
 if [ "$STAGING" ]; then
   FULLNAME=$FULLNAME-staging
 fi
+
 echo ''
 echo '> Deploying subgraph: '$FULLNAME
 
@@ -44,13 +40,22 @@ then
         --ipfs http://localhost:5001 \
         --node http://localhost:8020
 else
+    NODE_URL='https://app.satsuma.xyz/api/subgraphs/deploy'
+
+    if [ "$NETWORK_NAME" == 'bosagora' ]
+    then
+      NODE_URL='https://subgraph-deploy-mainnet.dao.bosagora.org'
+    elif [ "$NETWORK_NAME" == 'athens' ]
+    then
+      NODE_URL='https://subgraph-deploy-athens.dao.bosagora.org'
+    fi
+
     graph deploy $FULLNAME \
         --version-label $SUBGRAPH_VERSION \
-        --node https://app.satsuma.xyz/api/subgraphs/deploy \
+        --node $NODE_URL \
         --deploy-key $GRAPH_KEY > deploy-output.txt
 
     SUBGRAPH_ID=$(grep "Build completed:" deploy-output.txt | grep -oE "Qm[a-zA-Z0-9]{44}")
     rm deploy-output.txt
     echo "The Graph deployment complete: ${SUBGRAPH_ID}"
-
 fi

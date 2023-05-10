@@ -29,6 +29,9 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env.bosagora
+.env.athens
+.env.localhost
 
 # deployments
 deployments
@@ -42,3 +45,4 @@ generated
 subgraph.yaml
 .bin
 mythx.json
+.idea/
